@@ -240,15 +240,16 @@ class CloseButton(ClickedQLabel, BaseButtonEvents):
 
 
 class Header:
+    _height: int = 26
+
     def __init__(self, parent: QWidget) -> None:
-        self._height = 26
         self.panel = Panel(parent, parent.width(), self._height)
-        self.title = Title(parent, parent.width() * 0.8, self._height)
+        self.title = Title(parent, int(parent.width() * 0.8), self._height)
         self.hide_button = HideButton(
-            parent, parent.width() - self._height * 2, 0, self._height
+            parent, parent.width() - int(self._height * 2), 0, self._height
         )
         self.close_button = CloseButton(
-            parent, parent.width() - self._height, 0, self._height
+            parent, int(parent.width() - self._height), 0, self._height
         )
 
     def width(self) -> int:
