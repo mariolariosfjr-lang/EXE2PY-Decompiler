@@ -60,23 +60,46 @@ At the same time, the difference in versions does not matter. (With python versi
 
 ![](https://github.com/topdefaultuser/EXE2PY-Decompiler/blob/master/example/decompiling_process.png)
 
+## Configuration:
 
-# Upgrade pip:
+**Create virtual environment**
+
+`python -m venv "env"`
+
+<hr>
+
+**Activate virtual environment**
+
+Linux: `source ./env/bin/activate`
+
+Windows: `./env/Scripts/Activate.ps1`
+
+<hr>
+
+**Upgrade pip**:
 
 `python -m pip install --upgrade pip`
 
-# Install requirements:
+<hr>
+
+**Install requirements:**
 
 `python -m pip install -r requirements.txt`
 
-# Usage:
+## Development:
 
-`python main.py`
-
-# Validate-flake8:
+**Validate-flake8:**
 
 `flake8 filename.py`
 
-# Validate-pyright:
+<hr>
+
+**Validate-pyright:**
 
 `pyright filename.py`
+
+## Usage:
+
+`python main.py`
+
+<hr>
